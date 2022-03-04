@@ -1,0 +1,51 @@
+.footer__content {
+    padding: 83px 0;
+}
+
+.footer__nav {
+    margin-bottom: 83px;
+}
+
+.footer__nav a {
+    font-size: 24px;
+}
+
+.center {
+    justify-content: center;
+}
+
+.footer__bottom {
+    display: flex;
+    align-items: center;
+}
+
+.footer__copyright {
+    margin-right: auto;
+}
+
+.footer__social {
+    display: flex;
+}
+
+.social {
+    display: flex;
+    font-size: 24px;
+}
+
+.social img {
+    margin-right: 2px;
+}
+
+.social__footer:not(:last-child) {
+    margin-right: 30px;
+}
+
+.social__item {
+    display: flex;
+    align-items: center;
+}
+
+.social__item img {
+    width: 40px;
+    height: 40px;
+}

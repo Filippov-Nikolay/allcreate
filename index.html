@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/header/logo-all.png" type="image/x-icon">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <title>AllCreate</title>
+</head>
+<body>
+    <header class="header anim-block">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="#" class="logo">
+                        <img src="img/header/logo.png" alt="logo" class="logo__img">
+                    </a>
+                    <ul class="menu">
+                        <li class="menu__list"><a href="reviews.html" class="menu__link">Отзывы</a></li>
+                        <li class="menu__list"><a href="blog.html" class="menu__link">Блог</a></li>
+                        <li class="menu__list">
+                            <a href="index.html#services" class="menu__link">Услуги</a>
+                            <ul class="menu-sub">
+                                <li class="menu-sub__list"><a href="fullCreate.html" class="menu-sub__link">Создание сайта под ключ</a></li>
+                                <li class="menu-sub__list"><a href="otherServices.html" class="menu-sub__link">Другие услуги</a></li>
+                                <li class="menu-sub__list">
+                                    <a href="otherСonditions.html" class="menu-sub__link">Другие условия</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-sub__list"><a href="otherСonditions.html#writing-texts" class="menu-sub__link">Написание текстов</a></li>
+                                        <li class="menu-sub__list"><a href="otherСonditions.html#website-development" class="menu-sub__link">Дороботка сайта</a></li>
+                                        <li class="menu-sub__list"><a href="otherСonditions.html#site-support" class="menu-sub__link">Поддержка сайта</a></li>
+                                        <li class="menu-sub__list"><a href="otherСonditions.html#logo-development" class="menu-sub__link">Разработка логотипа</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__list"><a href="index.html#portfolio" class="menu__link">Портфолио сайтов</a></li>
+                        <li class="menu__list">
+                            <a href="informations.html" class="menu__link">Информация</a>
+                            <ul class="menu-sub">
+                                <li class="menu-sub__list"><a href="informations.html#contacts" class="menu-sub__link">Контакты</a></li>
+                                <li class="menu-sub__list"><a href="informations.html#about-us" class="menu-sub__link">О нас</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__list"><a href="otherСonditions.html#services-offered" class="menu__link">Цены</a></li>
+                    </ul>
+                    <div class="burger-menu">
+                        <input type="checkbox" id="open" class="hide">
+                        <label class="menu-open" for="open">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                        <div class="open">
+                            <ul class="menu">
+                                <li class="menu__list"><a href="reviews.html" class="menu__link">Отзывы</a></li>
+                                <li class="menu__list"><a href="blog.html" class="menu__link">Блог</a></li>
+                                <li class="menu__list">
+                                    <a href="index.html#services" class="menu__link">Услуги</a>
+                                    <ul class="menu-sub">
+                                        <li class="menu-sub__list"><a href="fullCreate.html" class="menu-sub__link">Создание сайта под ключ</a></li>
+                                        <li class="menu-sub__list"><a href="otherServices.html" class="menu-sub__link">Другие услуги</a></li>
+                                        <li class="menu-sub__list">
+                                            <a href="otherСonditions.html" class="menu-sub__link">Другие условия</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-sub__list"><a href="otherСonditions.html#writing-texts" class="menu-sub__link">Написание текстов</a></li>
+                                                <li class="menu-sub__list"><a href="otherСonditions.html#website-development" class="menu-sub__link">Дороботка сайта</a></li>
+                                                <li class="menu-sub__list"><a href="otherСonditions.html#site-support" class="menu-sub__link">Поддержка сайта</a></li>
+                                                <li class="menu-sub__list"><a href="otherСonditions.html#logo-development" class="menu-sub__link">Разработка логотипа</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__list"><a href="index.html#portfolio" class="menu__link">Портфолио сайтов</a></li>
+                                <li class="menu__list">
+                                    <a href="informations.html" class="menu__link">Информация</a>
+                                    <ul class="menu-sub">
+                                        <li class="menu-sub__list"><a href="informations.html#contacts" class="menu-sub__link">Контакты</a></li>
+                                        <li class="menu-sub__list"><a href="informations.html#about-us" class="menu-sub__link">О нас</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu__list"><a href="otherСonditions.html#services-offered" class="menu__link">Цены</a></li>
+                            </ul>
+                        </div>	
+                    </div>
+                    <div class="account">
+                        <a href="#win1"><img src="img/header/account.png" alt="account"></a>
+                        <a href="#x" class="overlay" id="win1"></a>
+                        <div class="popup">
+                            <form action="#" method="post">
+                                <div class="forms">
+                                    <div class="user-log">
+                                        E-mail: <input placeholder="Введите свою почту" type="email" name="userlog">
+                                    </div>
+                                    <div class="user-pas">
+                                        Пароль: <input placeholder="Введите свой пароль" type="password" name="userpas">
+                                        <br>
+                                        <a href="#" class="clear-pas">Забыли пароль?</a>
+                                    </div>
+                                    <button class="button">Авторизоваться</button>
+                                    <a href="registration.html">Не зарегистрированы?</a>
+                                </div>
+                            </form>
+                            <a class="close" title="Закрыть" href="#close"></a>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </nav>
+        <div class="header__content">
+            <div class="container">
+                <div class="header__content-wrapper">
+                    <img class="header__bg" src="img/header/bg.png" alt="">
+                    <div class="content-wrapper__left">
+                        <h1 class="content-wrapper__left-title">
+                            Создание сайтов под ключ разных задач!
+                        </h1>
+                        <p class="content-wrapper__left-text">
+                            Мы подружим вашу идею в реальное воплощение. К нам обращаются когда другие отказываются от ваших идей
+                        </p>
+                        <a href="#" class="content-wrapper__left-button button">Провести конслультацию</a>
+                    </div>  
+                    <div class="content-wrapper__right">
+                        <img src="img/header/img1.png" alt="img1" class="content-wrapper__right-img">              
+                        <img src="img/header/img2.png" alt="img1" class="content-wrapper__right-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+    </header>
+    <main id="services" class="main">
+        <section class="section">
+            <div class="container">
+                <img src="img/section1/bg.png" alt="" class="section__bg">
+                <div class="section__content">
+                    <div class="section__wrapper-left">
+                        <h2 class="section__title title">Услуги</h2>
+                    </div>
+                    <div class="section__wrapper-right">
+                        <div class="about-item">
+                            <div class="about-img">
+                                <img src="img/section0/img1.png" alt="">
+                            </div>
+                            <div class="search">
+                                <a href="fullCreate.html"><img src="img/key.png" alt="">Создание сайтов под ключ</a>
+                            </div>
+                        </div>
+                        <div class="about-item">
+                            <div class="about-img">
+                                <img src="img/section0/img2.png" alt="">
+                            </div>
+                            <div class="search">
+                                <a href="otherServices.html"><img src="img/services.png" alt="">Другие услуги</a>
+                            </div>
+                        </div>
+                        <div class="about-item">
+                            <div class="about-img">
+                                <img src="img/section0/img3.png" alt="">
+                            </div>
+                            <div class="search">
+                                <a href="otherСonditions.html"><img src="img/conditions.png" alt="">Другие условия</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="portfolio" class="line"></div>
+        <section class="section">
+            <div class="container">
+                <img src="img/section0/bg.png" alt="" class="section__bg">
+                <div class="section__content">
+                    <div class="section__wrapper-left">
+                        <h2 class="section__title title">Портфолио сайтов</h2>
+                    </div>
+                    <div class="section__wrapper-right">
+                        <div class="section__top">
+                            <div class="section__left">
+                                <div class="about-item">
+                                    <div class="about-img">
+                                        <img src="img/section1/img2.png" alt="">
+                                    </div>
+                                    <div class="search">
+                                        <a href="img/section1/img2-2.png" data-lightbox="portfolio-list"><img src="img/search.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="about-item">
+                                    <div class="about-img">
+                                        <img src="img/section1/img3.png" alt="">
+                                    </div>
+                                    <div class="search">
+                                        <a href="img/section1/img3-3.png" data-lightbox="portfolio-list"><img src="img/search.png" alt=""></a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="section__right">
+                                <div class="about-item">
+                                    <div class="about-img">
+                                        <img src="img/section1/img1.png" alt="">
+                                    </div>
+                                    <div class="search">
+                                        <a href="img/section1/img1-1.png" data-lightbox="portfolio-list"><img src="img/search.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__bottom">
+                            <div class="about-item">
+                                <div class="about-img">
+                                    <img src="img/section1/img4.png" alt="">
+                                </div>
+                                <div class="search">
+                                    <a href="img/section1/img4-4.png" data-lightbox="portfolio-list"><img src="img/search.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="line"></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__nav">
+                    <ul class="menu center">
+                        <li class="menu__list"><a href="reviews.html" class="menu__link">Отзывы</a></li>
+                        <li class="menu__list"><a href="blog.html" class="menu__link">Блог</a></li>
+                        <li class="menu__list">
+                            <a href="index.html#services" class="menu__link">Услуги</a>
+                            <ul class="menu-sub">
+                                <li class="menu-sub__list"><a href="fullCreate.html" class="menu-sub__link">Создание сайта под ключ</a></li>
+                                <li class="menu-sub__list"><a href="otherServices.html" class="menu-sub__link">Другие услуги</a></li>
+                                <li class="menu-sub__list"><a href="otherСonditions.html" class="menu-sub__link">Другие условия</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__list"><a href="index.html#portfolio" class="menu__link">Портфолио сайтов</a></li>
+                        <li class="menu__list">
+                            <a href="informations.html" class="menu__link">Информация</a>
+                            <ul class="menu-sub">
+                                <li class="menu-sub__list"><a href="informations.html#contacts" class="menu-sub__link">Контакты</a></li>
+                                <li class="menu-sub__list"><a href="informations.html#about-us" class="menu-sub__link">О нас</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__list"><a href="otherСonditions.html#services-offered" class="menu__link">Цены</a></li>
+                    </ul>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__copyright">
+                        &copy; 2021 Все права защищенны. Сайт создал Филиппов Николай
+                    </div>
+                    <div class="footer__social">
+                        <div class="social social__footer">
+                            <a href="#" class="social__item"><img src="img/telegram.png" alt="telegram">telegram</a>
+                        </div>
+                        <div class="social social__footer">
+                            <a href="#" class="social__item"><img src="img/instagram.png" alt="instagram">instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+</body>
+</html>

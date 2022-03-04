@@ -1,0 +1,291 @@
+.header__bg {
+    position: absolute;
+    z-index: -10;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.nav {
+    padding: 15px 0;
+    border-bottom: 1px solid #000;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+
+/* navigation */
+.menu {
+    position: relative;
+    display: flex;
+}
+
+.menu__list:not(:last-child) {
+    margin-right: 16px;
+}
+
+.menu__link::after {
+    content: '';
+    display: block;
+    margin: auto;
+    width: 0;
+    height: 1px;
+    background-color: #000;
+    transition: all .5s ease;
+}
+
+.menu__link:hover::after {
+    width: 100%;
+}
+
+.menu .menu__list:hover .menu-sub {
+    display: block;
+}
+
+.menu-sub {
+    position: absolute;
+    display: none;
+    z-index: 10;
+}
+
+.menu-sub__list {
+    padding-left: 16px;
+    max-width: 240px;
+}
+
+.menu-sub__link {
+    display: block;
+    margin-bottom: 2px;
+    padding: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    transition: all .5s ease;
+}
+
+.menu-sub__link:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.menu-sub .menu-sub__list:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.hide {
+    display: none; 
+}
+
+.hide + label ~ .open {
+    display: none;
+}
+
+.hide + label {
+    color: black;
+    cursor: pointer;
+    display: inline-block; 
+} /* оформляем текст label */
+
+.hide:checked + label + .open {
+    position: absolute;
+    top: 81px;
+    left: 0;
+    z-index: 10;
+    display: block; 
+    width: 100%;
+    background: #efefef;
+} /* когда чекбокс активен показываем блоки с содержанием  */
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-open span {
+    display: block;
+    margin-bottom: 3px;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+}
+
+
+/* account */
+.account {
+    margin-left: 20px;
+}
+
+.overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.65);
+    position: fixed;
+    cursor: default;
+}
+
+.overlay:target {
+    display: block;
+}
+
+.popup {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    z-index: 20;
+    display: none;
+    font-size: 14px;
+    margin: 0;
+    padding: 100px 15px 50px;
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #000;
+    background: #fefefe;
+}
+
+.overlay:target+.popup {
+    display: block;
+    transform: translateX(-50%);
+}
+
+.close {    
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    padding: 0;
+    border: 2px solid #000;
+    border-radius: 15px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.close:before {
+    position: absolute;
+    top: -1px;
+    left: 4px;
+    color: #000;
+    content: "X";
+}
+
+.forms {
+    text-align: center;
+}
+
+.forms .user-log, .user-pas {
+    margin-bottom: 30px;
+}
+
+.forms input {
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+
+.user-pas {
+    display: block;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.user-pas .clear-pas {
+    display: inline-block;
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+.clear-pas:hover {
+    font-weight: 700;
+}
+
+.forms button {
+    display: block;
+    margin: 50px auto 10px;
+    cursor: pointer;
+}
+
+.forms a {
+    font-size: 14px;
+}
+
+.forms a:hover {
+    font-weight: 700;
+}
+
+.header__content {
+    position: relative;
+    margin: 125px 0;
+    color: #fff;
+}
+
+.header__content-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.content-wrapper__left {
+    max-width: 600px;
+}
+
+.content-wrapper__left-title {
+    padding-top: 60px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.content-wrapper__left-text {
+    padding-top: 50px;
+    padding-bottom: 105px;
+    max-width: 365px;
+}
+
+.button {
+    padding: 15px 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+    transition: all .5s ease;
+}
+
+.button:hover {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.content-wrapper__right {
+    width: 100%;
+    background-color: #000;
+}
+
+.content-wrapper__right-img {
+    width: 100%;
+    max-height: 250px;
+}
+
+.content-wrapper__right-img:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.section__form {
+    margin: 50px auto 0;
+    padding: 80px 0;
+    width: 570px;
+    background-color: #fff;
+}

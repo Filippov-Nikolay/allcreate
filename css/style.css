@@ -1,0 +1,92 @@
+@import url('header.css');
+@import url('section.css');
+@import url('footer.css');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+/* firefox */
+body {
+    scrollbar-color: #b8b8b8 #fff; 
+    scrollbar-width: thin;  
+}
+
+/* chrome, opera, safari, yandex, microsoft-edge */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #b8b8b8;
+    border: 3px solid #fff;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.line {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    height: 1px;
+    background-color: #000;
+}
+
+.anim-block {
+    opacity: 0;
+    animation: show .3s 1;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
